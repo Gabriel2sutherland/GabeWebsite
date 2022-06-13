@@ -56,7 +56,7 @@ function newElement() {
   //Creating Cookies for website storage
   function setCookie(value){
     var TaskName = document.getElementById("myInput")
-    document.cookie = "name = " +TaskName; "expires =  Wed, 27 Jul 2022 12:00:00 UTC; path=/";
+    document.cookie = "name = " + TaskName; "expires =  Wed, 27 Jul 2022 12:00:00 UTC; path=/";
 
 
 
