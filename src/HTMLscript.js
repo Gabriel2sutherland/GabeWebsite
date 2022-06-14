@@ -30,9 +30,9 @@ list.addEventListener('click', function(ev) {
 
   //Creating Cookies for website storage
   function setCookie() {
-    var taskname = document.getElementById("myInput").value
-    document.cookie = `TaskID= ${taskname}; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure`;
-    document.cookie = "TaskID= gaghk; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+    var taskname = document.getElementById("myInput").value;
+    document.cookie = "TaskID=${taskname}; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+    document.cookie = "testItem= gaghk; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
   }
 
 
@@ -50,6 +50,7 @@ function newElement() {
   if (inputValue === '') {
     alert("You must write something!");
   } else {
+    setCookie()
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
