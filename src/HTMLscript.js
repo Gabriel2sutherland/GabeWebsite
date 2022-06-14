@@ -26,6 +26,18 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
+
+
+  //Creating Cookies for website storage
+  function setCookie() {
+    var taskname = document.getElementById("myInput").value
+    document.cookie = `TaskID= ${taskname}; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure`;
+    document.cookie = "TaskID= gaghk; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+  }
+
+
+
+
  //document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
  //document.cookie = "name=test; Secure";
  //document.cookie = "name=oeschger; SameSite=None; Secure";
@@ -55,11 +67,6 @@ function newElement() {
     }
   }
 
-  //Creating Cookies for website storage
-  function setCookie() {
-    var taskname = document.getElementById("myInput").value
-    document.cookie = `TaskID= ${taskname}; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure`;
-    document.cookie = "TaskID= gaghk; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-  }
+
 
 }
