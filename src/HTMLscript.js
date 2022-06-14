@@ -55,11 +55,11 @@ function newElement() {
   }
 
   //Creating Cookies for website storage
-  function setCookie(){
+  function setCookie(name,){
     var TaskName =document.getElementById("myInput");
     
 
-    document.cookie = "TaskID=" + TaskName + "; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/";
+    document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/";
 
   }
 
