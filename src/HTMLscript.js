@@ -27,8 +27,8 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
  document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; SameSite=None";
- document.cookie = "name=test";
- document.cookie = "name=oeschger; SameSite=None; Secure";
+ document.cookie = "name=test; Secure";
+ //document.cookie = "name=oeschger; SameSite=None; Secure";
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
