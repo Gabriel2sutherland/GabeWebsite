@@ -26,8 +26,8 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
- document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
- document.cookie = "name=test; Secure";
+ //document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+ //document.cookie = "name=test; Secure";
  //document.cookie = "name=oeschger; SameSite=None; Secure";
 // Create a new list item when clicking on the "Add" button
 function newElement() {
@@ -56,9 +56,9 @@ function newElement() {
   }
 
   //Creating Cookies for website storage
-  //function setCookie() {
-    
-    
-
+  function setCookie() {
+    var taskname = document.getElementById("myInput").value
+    document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+  }
 
 }
