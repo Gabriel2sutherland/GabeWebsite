@@ -27,6 +27,7 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+ document.cookie = "name=oeschger; SameSite=None; Secure";
 // Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
@@ -59,10 +60,7 @@ function newElement() {
     
 
     document.cookie = "TaskID=" + TaskName + "; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/";
-    
-
 
   }
-
 
 }
