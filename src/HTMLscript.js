@@ -55,12 +55,12 @@ function newElement() {
   }
 
   //Creating Cookies for website storage
-  function setCookie(name,){
+  //function setCookie() {
     var TaskName =document.getElementById("myInput");
     
 
-    document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/";
+  document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/";
 
-  }
+  //}
 
 }
