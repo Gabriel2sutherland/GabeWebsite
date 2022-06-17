@@ -27,12 +27,12 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-
+const cookies = []
   //Creating Cookies for website storage
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
     document.cookie = "TaskID="+taskname+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-    
+    cookies.push(taskname)
     //document.cookie = "TaskID="+taskname+"1; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
 
   }
