@@ -1,4 +1,4 @@
-const TaskArray = []
+const taskArray = []
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -13,11 +13,11 @@ for (i = 0; i < myNodelist.length; i++) {
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
-delCookie(i)
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
+    delCookie(i)
   }
 
 }
@@ -35,16 +35,17 @@ list.addEventListener('click', function(ev) {
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
     document.cookie = "TaskID="+taskname+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-    TaskArray.push(taskname)
+    taskArray.push(taskname)
+    document.cookie = "TaskID="+taskArray+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
     //document.cookie = "TaskID="+taskname+"1; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
 
-    document.getElementById("demo").innerHTML = TaskArray;
+    document.getElementById("demo").innerHTML = taskArray;
   }
 
   //Deletes a Cookie through the X button
   function delCookie(index){
-    TaskArray.splice(index, 1)
-    document.getElementById("demo").innerHTML = TaskArray;
+    taskArray.splice(index, 1)
+    document.getElementById("demo").innerHTML = taskArray;
 
 
   }
