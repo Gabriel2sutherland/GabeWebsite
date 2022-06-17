@@ -32,7 +32,7 @@ list.addEventListener('click', function(ev) {
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
     document.cookie = "TaskID="+taskname+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-    document.cookie = "testItem= gagk; expires= 0 UTC; path=/; Secure";
+    document.cookie = "testItem= gagk; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
   }
 
 
