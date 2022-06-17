@@ -32,10 +32,18 @@ list.addEventListener('click', function(ev) {
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
     document.cookie = "TaskID="+taskname+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-    document.cookie = "g=TaskID; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
-    document.cookie = "weeee=TaskID; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
+    document.cookie = "TaskID="+taskname+"1; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+    document.cookie = "TaskID="+taskname+"1; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
 
   }
+
+  //Deletes a Cookie through the X button
+  function delCookie(){
+
+
+
+  }
+
 
 
 // Create a new list item when clicking on the "Add" button
