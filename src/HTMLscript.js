@@ -46,7 +46,7 @@ list.addEventListener('click', function(ev) {
   function delCookie(index){
     taskArray.splice(index, 1)
     document.getElementById("demo").innerHTML = taskArray;
-
+    console.log(taskArray)
 
   }
 
