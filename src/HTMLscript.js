@@ -36,7 +36,7 @@ list.addEventListener('click', function(ev) {
     var taskname = document.getElementById("myInput").value;
     document.cookie = "TaskID="+taskname+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
     taskArray.push(taskname)
-    document.cookie = "Array="+taskArray.appendChild()+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+    document.cookie = "Array="+taskArray.append()+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
     //document.cookie = "TaskID="+taskname+"1; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
 
     document.getElementById("demo").innerHTML = taskArray;
