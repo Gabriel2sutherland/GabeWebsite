@@ -17,6 +17,7 @@ for (i = 0; i < close.length; i++) {
     var div = this.parentElement;
     div.style.display = "none";
   }
+  delCookie(i)
 }
 
 // Add a "checked" symbol when clicking on a list item
@@ -43,8 +44,9 @@ const cookies = []
   }
 
   //Deletes a Cookie through the X button
-  function delCookie(){
-
+  function delCookie(index){
+    cookies.pop(index)
+    document.getElementById("demo").innerHTML = cookies;
 
 
   }
