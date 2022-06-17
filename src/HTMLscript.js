@@ -32,7 +32,7 @@ list.addEventListener('click', function(ev) {
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
     document.cookie = taskname+"=TaskID; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-    document.cookie = "test=TaskID; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
+    document.cookie = "ello=TaskID; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
     document.cookie = "weeee=TaskID; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
 
   }
@@ -41,7 +41,7 @@ list.addEventListener('click', function(ev) {
 
 
  //document.cookie = "TaskID= please; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
- document.cookie = "name=test; expires = 0; Secure";
+ document.cookie = "name=test; expires = thur, 16 Jun 2022 12:00:00 UTC; Secure";
  //document.cookie = "name=oeschger; SameSite=None; Secure";
 // Create a new list item when clicking on the "Add" button
 function newElement() {
