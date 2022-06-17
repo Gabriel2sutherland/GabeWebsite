@@ -31,9 +31,6 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 
-
-
-
   //Creating Cookies for website storage
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
@@ -46,13 +43,11 @@ list.addEventListener('click', function(ev) {
 
   //Deletes a Cookie through the X button
   function delCookie(index){
-    TaskArray.pop(index)
+    TaskArray.splice(index, 1)
     document.getElementById("demo").innerHTML = TaskArray;
 
 
   }
-
-
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
@@ -80,7 +75,5 @@ function newElement() {
       div.style.display = "none";
     }
   }
-
-
 
 }
