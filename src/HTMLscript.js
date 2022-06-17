@@ -13,12 +13,13 @@ for (i = 0; i < myNodelist.length; i++) {
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
+delCookie(i)
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
     div.style.display = "none";
   }
-  delCookie(i)
+
 }
 
 // Add a "checked" symbol when clicking on a list item
