@@ -27,6 +27,10 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+
 const cookies = []
   //Creating Cookies for website storage
   function setCookie() {
