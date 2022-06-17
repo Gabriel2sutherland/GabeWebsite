@@ -27,8 +27,8 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-const cars = ["Saab", "Volvo", "BMW"];
-document.getElementById("demo").innerHTML = cars;
+
+
 
 
 const cookies = []
@@ -39,6 +39,7 @@ const cookies = []
     cookies.push(taskname)
     //document.cookie = "TaskID="+taskname+"1; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
 
+    document.getElementById("demo").innerHTML = cookies;
   }
 
   //Deletes a Cookie through the X button
