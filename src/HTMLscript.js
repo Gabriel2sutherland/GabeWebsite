@@ -1,3 +1,4 @@
+const TaskArray = []
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -32,7 +33,6 @@ list.addEventListener('click', function(ev) {
 
 
 
-const TaskArray = []
   //Creating Cookies for website storage
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
