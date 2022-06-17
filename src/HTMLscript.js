@@ -31,8 +31,8 @@ list.addEventListener('click', function(ev) {
   //Creating Cookies for website storage
   function setCookie() {
     var taskname = document.getElementById("myInput").value;
-    document.cookie = "TaskID="+taskname+"; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
-    document.cookie = "testItem= gagk; expires= thur, 16 Jun 2022 12:00:00 UTC; path=/; Secure";
+    document.cookie = taskname+"=TaskID; expires= wed, 27 Jul 2022 12:00:00 UTC; path=/; Secure";
+
   }
 
 
